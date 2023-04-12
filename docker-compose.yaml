@@ -5,9 +5,9 @@ services:
     image: postgres
     restart: always
     environment:
-      POSTGRES_USER: pagecloud
-      POSTGRES_PASSWORD: pagecloud
-      POSTGRES_DB: page
+      POSTGRES_USER: roy
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: pbl
     volumes:
       - dbvolume:/var/lib/postgresql/data
     
@@ -22,9 +22,9 @@ services:
     build:
       context: backend
     environment:
-      DB_USER: pagecloud
-      DB_PASS: pagecloud
-      DB: page
+      DB_USER: roy
+      DB_PASS: 123
+      DB: pbl
       DB_HOST: db
     links:
       - db

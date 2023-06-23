@@ -1,3 +1,3 @@
-Frontend -> RabbitMQ -> Backend -> Database -> appminer
-                            |
-                        Consumer.py
+Frontend -> RabbitMQ -> Backend (Consumer.py) -> Database -> appminer
+                            
+                        

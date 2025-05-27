@@ -12,7 +12,7 @@ def callback(ch, method, properties, body):
     if properties.content_type == 'add':
         body = json.loads(body)
         # res = addreview(body)
-        res = requests.post("http://backend:5000/reviews/add", data=body)
+        res = requests.post("http://backend:5001/reviews/add", data=body)
         print(res)
 
 channel.basic_consume(on_message_callback=callback, queue='blog', auto_ack=True)

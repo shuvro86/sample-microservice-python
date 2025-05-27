@@ -91,4 +91,4 @@ def listreviews():
 # Deferred execution by 20 seconds to allow database to initialize
 time.sleep(20)
 init_tables()
-app.run(host="0.0.0.0", port=5000)
+app.run(host="0.0.0.0", port=5001)
